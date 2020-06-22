@@ -9,6 +9,8 @@ header{
   padding: 23px 50px;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
+  z-index: 100;
   h1{
     font-size: 30px;
     font-family: 'Noto Sans JP', sans-serif;
@@ -16,4 +18,9 @@ header{
   .header-menus{
     display: flex;
   }
+}
+
+footer{
+  background-color: rgb(1, 1, 31);
+  padding: 30px;
 }

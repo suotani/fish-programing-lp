@@ -7,11 +7,17 @@ header {
   width: 100%;
   padding: 23px 50px;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: white;
+  z-index: 100; }
   header h1 {
     font-size: 30px;
     font-family: 'Noto Sans JP', sans-serif; }
   header .header-menus {
     display: flex; }
+
+footer {
+  background-color: #01011f;
+  padding: 30px; }
 
 /*# sourceMappingURL=common.css.map */

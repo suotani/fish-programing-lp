@@ -1,6 +1,6 @@
 main {
   margin-top: 70px;
-  padding: 60px 0px; }
+  padding-top: 60px; }
   main .top {
     text-align: center;
     padding: 30px; }
@@ -11,9 +11,50 @@ main {
     main .top .start-btn {
       margin-top: 60px;
       padding: 15px 46px; }
-  main .welcome {
-    background-color: #88d9e7;
+  main .section {
     width: 100%;
     padding: 30px; }
+    main .section h2, main .section h3 {
+      text-align: center; }
+    main .section h2 {
+      margin: 50px 0px; }
+    main .section h3 {
+      margin-top: 70px; }
+  main .welcome-section {
+    background-color: #88d9e7; }
+  main .samples-section {
+    background-color: #3ec5dd; }
+    main .samples-section .demos {
+      display: flex; }
+      main .samples-section .demos .content {
+        width: 33%;
+        position: relative;
+        padding: 10px 40px 10px 0; }
+        main .samples-section .demos .content .title {
+          border-bottom: solid 3px #e8e8e8; }
+        main .samples-section .demos .content img.pc-site {
+          width: 100%;
+          height: 267px; }
+        main .samples-section .demos .content img.sp-site {
+          width: 32%;
+          position: absolute;
+          top: 124px;
+          right: 34px;
+          box-shadow: 1px 1px 1px 2px #ddd; }
+        main .samples-section .demos .content a {
+          display: inline-block;
+          text-align: center;
+          width: 100%;
+          margin: 43px auto 10px;
+          background-color: #bee4c3;
+          color: #929191;
+          border-radius: 10px; }
+        main .samples-section .demos .content a:hover {
+          text-decoration: none;
+          background-color: #cfe8d3; }
+  main .engineers-section {
+    background-color: #30aabf; }
+  main .prices-section {
+    background-color: #0b7e92; }
 
 /*# sourceMappingURL=style.css.map */

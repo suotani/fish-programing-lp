@@ -1,0 +1,347 @@
+body{
+	font-family :
+  Georgia,
+  '游明朝',
+	YuMincho,    /* Mac用 */
+	'Yu Mincho', /* Windows用 */
+	serif;
+}
+
+.sp{
+  display: none;
+}
+
+a {
+  color: #777;
+}
+
+header{
+  margin-top: 70px;
+}
+
+h1{
+  margin-bottom: 0px;
+  font-weight: 600;
+}
+
+.container{
+  padding: 0 52px;
+}
+
+.header-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.header-wrap p{
+  width: 20%;
+}
+
+.header-main{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header-main li{
+  list-style: none;
+  padding: 0 10px;
+  margin-right: 10px;
+}
+
+.header-main i{
+  margin-left: 10px;
+}
+
+.default-ul-hide{
+  position: relative;
+}
+
+.dropdown-menu{
+  display: none;
+  border: none;
+  padding-top: 0;
+  margin-top: 0;
+  background: none;
+}
+
+.menu-wrap{
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-wrap a{
+  border: solid 1px #aca8a8;
+  padding: 10px;
+  width: 130%;
+  background-color: white;
+}
+
+.menu-wrap a:nth-child(2){
+  border-top: none;
+}
+
+.dropdown-menu a{
+  color: black;
+}
+
+.search-form{
+  width: 30%;
+}
+
+.search-form form{
+  display: none;
+  border: solid 1px #adadad;
+}
+
+.search-btn{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-form .input-wrap .active{
+  border: solid 1px #7e7d7d;
+}
+
+.search-form input{
+  outline: 0;
+  border: none;
+}
+
+main{
+  margin-bottom: 100px;
+}
+
+.main-image{
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+h2{
+  color: #777;
+  font-size: 27px;
+  line-height: 50px;
+  margin-bottom: 100px;
+  font-weight: 400;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.post-date{
+  width: 32.7%;
+  color: #777;
+}
+
+.content-link{
+  width: 67.3%;
+}
+
+.content-link h3{
+  font-size: 22px;
+  color: #000;
+}
+
+.content-link p{
+  font-size: 18px;
+  margin-top: 20px;
+  color: #777;
+}
+
+.pagenation{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.paging-button{
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  color: #777;
+  border: solid 1px rgb(167, 165, 165);
+  text-align: center;
+  line-height: 50px;
+  font-weight: 500;
+}
+
+.paging-button:hover{
+  color: #777;
+  text-decoration: none;
+}
+
+.paging-button.active{
+  background-color: #d6d6d6;
+  color: #000;
+}
+
+.paging-button.next-button{
+  width: 80px;
+  font-weight: 100;
+}
+
+footer{
+  margin-bottom: 70px;
+}
+
+.footer{
+  border-top: solid 1px #d6d6d6;
+  border-bottom: solid 1px #d6d6d6;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.footer-main{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.parsonal{
+  width: 34%;
+  padding-right: 30px;
+}
+
+.parsonal-data{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.parsonal-data img{
+  width: 100px;
+  height: 100px;
+  border-radius: 400px;
+}
+
+.parsonal-name{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.parsonal-links{
+  width: 50%;
+  padding: 20px; 
+}
+
+.icons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%
+}
+
+.icons i{
+  font-size: 22px;
+  color: #777;
+  margin-right: 20px;
+}
+
+.parsonal-text{
+  padding: 10px 30px 0 0;
+  font-size: 17px;
+  color: #777;
+}
+
+.footer-title{
+  margin-bottom: 27px;
+}
+
+.footer-right1{
+  width: 22%;
+  padding-right: 15px;
+}
+
+.footer-text{
+  color: #777;
+}
+
+.footer-right2{
+  width: 22%;
+  padding-right: 15px;
+  padding-left: 10px;
+}
+
+.recent-content{
+  color: #777;
+}
+
+.recent-content a{
+  font-size: 18px;
+  color: #777;
+  border-bottom: solid 1px #d6d6d6;
+}
+
+.recent-content a:hover{
+  color: #777;
+  text-decoration: none;
+}
+
+.recent-content p{
+  margin-top: 5px;
+  color: #a3a1a1;
+}
+
+.footer-right3{
+  width: 22%;
+  padding-right: 15px;
+}
+
+.category-link{
+  margin-bottom: 10px;
+}
+
+.category a{
+  font-size: 18px;
+  color: #777;
+  border-bottom: solid 1px #d6d6d6;
+}
+
+.category a:hover{
+  color: #777;
+  text-decoration: none;
+}
+
+.footer-search-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.footer-search-form input{
+  outline: none;
+  padding-left: 10px;
+  height: 45px;
+  width: 22%;
+  border: solid 1px #d6d6d6;
+}
+
+.footer-search-form input:focus{
+  border: solid 2px #97dff1;
+}
+
+.copylight{
+  padding-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+.copylight .icons{
+  width: 33%
+}
+
+.copylight p{
+  color: #777;
+}
+
+.copylight a{
+  color: #666;
+}

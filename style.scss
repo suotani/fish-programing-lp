@@ -1,6 +1,6 @@
 main{
   margin-top: 70px;
-  padding: 60px 0px;
+  padding-top: 60px;
   .top{
     text-align: center;
     padding: 30px;
@@ -14,9 +14,74 @@ main{
       padding: 15px 46px;
     }
   }
-  .welcome{
-    background-color: #88d9e7;
+  .section{
     width: 100%;
     padding: 30px;
+
+    h2, h3{
+      text-align: center;
+    }
+    h2{
+      margin: 50px 0px;
+    }
+    h3{
+      margin-top: 70px;
+    }
+  }
+  .welcome-section{
+    background-color: #88d9e7;
+  }
+
+  .samples-section{
+    background-color: #3ec5dd;
+
+    .demos{
+      display: flex;
+      .content{
+        width: 33%;
+        position: relative;
+        padding: 10px 40px 10px 0;
+        .title{
+          border-bottom: solid 3px #e8e8e8;
+        }
+        img.pc-site{
+          width: 100%;
+          height: 267px;
+        }
+        
+        img.sp-site{
+          width: 32%;
+          position: absolute;
+          top: 124px;
+          right: 34px;
+          box-shadow: 1px 1px 1px 2px #ddd;
+        }
+        a{
+          display: inline-block;
+          text-align: center;
+          width: 100%;
+          margin: 43px auto 10px;
+          background-color: #bee4c3;
+          color: #929191;
+          border-radius: 10px;
+        }
+        
+        a:hover{
+          text-decoration: none;
+          background-color: #cfe8d3;
+        }
+        
+      }
+    }
+
+  }
+
+  .engineers-section{
+    background-color: #30aabf;
+
+  }
+  .prices-section{
+    background-color: #0b7e92;
+
   }
 }
