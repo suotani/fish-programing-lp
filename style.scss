@@ -14,6 +14,9 @@ main{
       padding: 15px 46px;
     }
   }
+  .info{
+    background: linear-gradient(to bottom, #cbedf3, rgb(49, 101, 126));
+  }
   .section{
     width: 100%;
     padding: 30px;
@@ -23,17 +26,29 @@ main{
     }
     h2{
       margin: 50px 0px;
+      margin-top: 120px;
     }
+    h2:after {
+      content:"";
+      display:block;
+      margin: auto;
+      margin-top: 20px;
+      height:1px;
+      width:50%;
+      background: linear-gradient(to right, rgb(223, 237, 250), rgb(39, 66, 117));
+    }
+
     h3{
-      margin-top: 70px;
+      margin-top: 90px;
+      margin-bottom: 30px;
     }
   }
   .welcome-section{
-    background-color: #88d9e7;
+    //background-color: #88d9e7;
   }
 
   .samples-section{
-    background-color: #3ec5dd;
+    //background-color: #3ec5dd;
 
     .demos{
       display: flex;
@@ -72,16 +87,94 @@ main{
         }
         
       }
+
+      .service{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+          width: 50%;
+        }
+        ul{
+          background-color: white;
+          margin-left: 39px;
+          width: 40%;
+          height: 100%;
+          margin-bottom: 0px;
+          padding: 20px 50px;
+          position: relative;
+          border-radius: 9px;
+          li{
+            font-size: 26px;
+          }
+        }
+        ul:before{
+          content: "";
+          display: block;
+          position: absolute;
+          top: 20%;
+          left: -31px;
+          border-right: solid 33px white;
+          border-top: solid 33px rgba(255, 255, 255, 0);
+          border-bottom: solid 33px rgba(255, 255, 255, 0);
+        }
+      }
     }
 
   }
 
-  .engineers-section{
-    background-color: #30aabf;
+  .skills-section{
+    .skills{
+      background-color: #ebfbff;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px 30px 0px 30px;
+      border-radius: 5px;
+      .skill{
+        width: 120px;
+        text-align: center;
 
+        p{
+          margin-bottom: 50px;
+        }
+
+        .smallicon{
+          font-size: 80px;
+        }
+        .devicons-cloud9{
+          color: #90d1f7;
+        }
+
+
+      }
+    }
+  }
+
+  .engineers-section{
+    //background-color: #30aabf;
+    .engineer{
+      background-color: white;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      margin-bottom: 29px;
+      box-shadow: #406371 3px 3px;
+      border-radius: 4px;
+      .comment-wrap{
+        width: 100%;
+        .engineer-comment{
+          width: 80%;
+          margin: auto;
+        }
+        .engineer-name{
+          text-align: right;
+        }
+      }
+    }
   }
   .prices-section{
-    background-color: #0b7e92;
+    //background-color: #0b7e92;
 
   }
 }
