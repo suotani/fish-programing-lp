@@ -1,0 +1,108 @@
+header{
+  padding: 10px;
+  a.toIndex, a.toIndex:hover{
+    font-size: 25px;
+  }
+  .header-menus{
+    a{
+      width: 115px;
+      font-size: 13px;
+    }
+  }
+}
+
+main{
+  .top{
+    padding: 30px 5px;
+    h2{
+      font-size: 28px;
+    }
+  }
+  .section{
+    padding: 30px 10px;
+    h2{
+      margin-top: 60px;
+      font-size: 28px;
+    }
+    h2:after{
+      width: 100%;
+    }
+    h3{
+      margin-top: 50px;
+    }
+  }
+
+  .welcome-section{
+    .welcome-wrap{
+      img{
+        width: 100%;
+      }
+      .welcome-comment{
+        margin-top: 10px;
+        padding: 0px;
+      }
+    }
+  }
+
+  .samples-section{
+    .demos{
+      .content{
+        width: 100%;
+        padding: 10px 0px;
+      }
+      .service{
+        img{
+          width: 100%;
+        }
+        ul:before{
+          top: -52px;
+          left: 29px;
+          border-right: solid 20px #ffffff00;
+          border-left: solid 20px rgba(255, 255, 255, 0);
+          border-bottom: solid 20px white;
+        }
+        ul{
+          margin: 0;
+          margin-top: 25px;
+          padding: 10px 0px;
+          width: 100%;
+          padding-left: 37px;
+          height: fit-content;
+
+          li{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .skills-section{
+    .skills{
+      padding-right: 10px;
+      padding-left: 10px;
+      .skill{
+        width: 95px;
+      }
+    }
+  }
+
+  .engineers-section{
+    .engineer{
+
+      .comment-wrap{
+        .engineer-comment{
+          width: 100%;
+        }
+        .engineer-name{
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+#toTop{
+  right: 10px;
+  bottom: 10px;
+}

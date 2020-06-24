@@ -10,7 +10,7 @@ header {
   justify-content: space-between;
   background-color: white;
   z-index: 100; }
-  header a, header a:hover {
+  header a.toIndex, header a.toIndex:hover {
     text-decoration: none;
     color: black;
     font-size: 30px;
@@ -20,7 +20,7 @@ header {
 
 .header.headerColor-default {
   background-color: #d4cece8a; }
-  .header.headerColor-default a {
+  .header.headerColor-default a.toIndex {
     color: #69caf1; }
 
 footer {

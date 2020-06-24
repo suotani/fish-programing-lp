@@ -33,8 +33,16 @@ main {
     main .section h3 {
       margin-top: 90px;
       margin-bottom: 30px; }
+  main .welcome-section .welcome-wrap {
+    display: flex;
+    flex-wrap: wrap; }
+    main .welcome-section .welcome-wrap img {
+      width: 50%; }
+    main .welcome-section .welcome-wrap .welcome-comment {
+      padding: 0px 30px; }
   main .samples-section .demos {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     main .samples-section .demos .content {
       width: 33%;
       position: relative;
@@ -63,6 +71,7 @@ main {
         background-color: #cfe8d3; }
     main .samples-section .demos .service {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center; }
       main .samples-section .demos .service img {

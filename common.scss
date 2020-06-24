@@ -11,7 +11,7 @@ header{
   justify-content: space-between;
   background-color: white;
   z-index: 100;
-  a, a:hover{
+  a.toIndex, a.toIndex:hover{
     text-decoration: none;
     color: black;
     font-size: 30px;
@@ -24,7 +24,7 @@ header{
 
 .header.headerColor-default{
   background-color: #d4cece8a;
-  a{
+  a.toIndex{
     color: #69caf1;
   }
 }
