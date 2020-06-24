@@ -20,7 +20,8 @@ main .section {
   main .section h3 {
     margin-top: 50px; }
 main .welcome-section .welcome-wrap img {
-  width: 100%; }
+  width: 300px;
+  margin: auto; }
 main .welcome-section .welcome-wrap .welcome-comment {
   margin-top: 10px;
   padding: 0px; }
