@@ -10,14 +10,26 @@ header {
   justify-content: space-between;
   background-color: white;
   z-index: 100; }
-  header h1 {
+  header a, header a:hover {
+    text-decoration: none;
+    color: black;
     font-size: 30px;
     font-family: 'Noto Sans JP', sans-serif; }
   header .header-menus {
     display: flex; }
 
+.header.headerColor-default {
+  background-color: #d4cece8a; }
+  .header.headerColor-default a {
+    color: #69caf1; }
+
 footer {
   background-color: #01011f;
   padding: 30px; }
+
+#toTop {
+  position: fixed;
+  right: 20px;
+  bottom: 50px; }
 
 /*# sourceMappingURL=common.css.map */

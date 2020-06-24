@@ -11,7 +11,9 @@ header{
   justify-content: space-between;
   background-color: white;
   z-index: 100;
-  h1{
+  a, a:hover{
+    text-decoration: none;
+    color: black;
     font-size: 30px;
     font-family: 'Noto Sans JP', sans-serif;
   }
@@ -20,7 +22,20 @@ header{
   }
 }
 
+.header.headerColor-default{
+  background-color: #d4cece8a;
+  a{
+    color: #69caf1;
+  }
+}
+
 footer{
   background-color: rgb(1, 1, 31);
   padding: 30px;
+}
+
+#toTop{
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
 }

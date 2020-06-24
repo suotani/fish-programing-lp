@@ -4,6 +4,7 @@ main{
   .top{
     text-align: center;
     padding: 30px;
+    padding-bottom: 60px;
     h2{
       font-family: 'Noto Sans JP', sans-serif;
       font-weight: 700;
@@ -145,7 +146,39 @@ main{
         .devicons-cloud9{
           color: #90d1f7;
         }
-
+        .devicons-chrome{
+          color: #ffb200;
+        }
+        .devicons-heroku{
+          color: #609;
+        }
+        .devicons-javascript_shield{
+          color: #e44d27;
+        }
+        .devicons-css3{
+          color: #3b9adb;
+        }
+        .devicons-bootstrap{
+          color: #563d7c;
+        }
+        .devicons-ruby{
+          color: #db2c1e;
+        }
+        .devicons-ruby_on_rails{
+          color: #cd1c00;
+        }
+        .devicons-database{
+          color: #4a8daa;
+        }
+        .devicons-javascript{
+          color: #ffdd3f;
+        }
+        .devicons-jquery{
+          color: #0d60a9;
+        }
+        .devicons-markdown{
+          color: #98eaa9;
+        }
 
       }
     }
@@ -175,6 +208,30 @@ main{
   }
   .prices-section{
     //background-color: #0b7e92;
+    .menter{
+      color: white;
+      width: 70%;
+      margin: auto;
+      th, td{
+        text-align: center;
+        svg{
+          font-size: 25px;
+          font-weight: 600;
+        }
+        svg.bi-check{
+          color: #6ee471;
+        }
+      }
+    }
 
+    .table-header{
+      th{
+        border-top: none;
+      }
+    }
+
+    .table-column{
+      width: 40%;
+    }
   }
 }

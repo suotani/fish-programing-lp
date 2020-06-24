@@ -3,7 +3,8 @@ main {
   padding-top: 60px; }
   main .top {
     text-align: center;
-    padding: 30px; }
+    padding: 30px;
+    padding-bottom: 60px; }
     main .top h2 {
       font-family: 'Noto Sans JP', sans-serif;
       font-weight: 700;
@@ -102,6 +103,28 @@ main {
         font-size: 80px; }
       main .skills-section .skills .skill .devicons-cloud9 {
         color: #90d1f7; }
+      main .skills-section .skills .skill .devicons-chrome {
+        color: #ffb200; }
+      main .skills-section .skills .skill .devicons-heroku {
+        color: #609; }
+      main .skills-section .skills .skill .devicons-javascript_shield {
+        color: #e44d27; }
+      main .skills-section .skills .skill .devicons-css3 {
+        color: #3b9adb; }
+      main .skills-section .skills .skill .devicons-bootstrap {
+        color: #563d7c; }
+      main .skills-section .skills .skill .devicons-ruby {
+        color: #db2c1e; }
+      main .skills-section .skills .skill .devicons-ruby_on_rails {
+        color: #cd1c00; }
+      main .skills-section .skills .skill .devicons-database {
+        color: #4a8daa; }
+      main .skills-section .skills .skill .devicons-javascript {
+        color: #ffdd3f; }
+      main .skills-section .skills .skill .devicons-jquery {
+        color: #0d60a9; }
+      main .skills-section .skills .skill .devicons-markdown {
+        color: #98eaa9; }
   main .engineers-section .engineer {
     background-color: white;
     width: 100%;
@@ -117,5 +140,20 @@ main {
         margin: auto; }
       main .engineers-section .engineer .comment-wrap .engineer-name {
         text-align: right; }
+  main .prices-section .menter {
+    color: white;
+    width: 70%;
+    margin: auto; }
+    main .prices-section .menter th, main .prices-section .menter td {
+      text-align: center; }
+      main .prices-section .menter th svg, main .prices-section .menter td svg {
+        font-size: 25px;
+        font-weight: 600; }
+      main .prices-section .menter th svg.bi-check, main .prices-section .menter td svg.bi-check {
+        color: #6ee471; }
+  main .prices-section .table-header th {
+    border-top: none; }
+  main .prices-section .table-column {
+    width: 40%; }
 
 /*# sourceMappingURL=style.css.map */
