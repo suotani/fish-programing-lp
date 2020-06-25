@@ -165,4 +165,7 @@ main {
   main .prices-section .table-column {
     width: 40%; }
 
+#inquiryLoading, #inquiryResult {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */
