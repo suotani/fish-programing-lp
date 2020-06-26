@@ -17,35 +17,39 @@ $(function(){
   });
 
   $("#inquirySubmit").on("click", function(){
-    $("#inquiryLoading").show();
-    if($("#exampleInputEmail1").val() === ""){
-      $("#inquiryLoading").hide();
-      $("#inquiryResult").text("メールアドレスを入力して下さい");
-      $("#inquiryResult").show();
-    }else{
-      $.ajax({
-        type : 'POST',
-        url : 'https://aquarium-fish-programing.herokuapp.com/inquiry',
-        dataType : 'application/json',
-        headers: {
-          "Content-Type": "application/json; charset=utf-8",
-          "Access-Control-Allow-Origin": "*"
-        },
-        xhrFields: {
-          withCredentials: true
-        },
-        success : function(data, status, xhr){
-          let message = data["message"];
-          $("#inquiryLoading").hide();
-          $("#inquiryResult").text(message);
-          $("#inquiryResult").show();
-        },
-        error : function(){
-          $("#inquiryLoading").hide();
-          $("#inquiryResult").text("失敗しました");
-          $("#inquiryResult").show();
-        }
-      })
-    }
+    let data = { email: $("#exampleInputEmail1").val() };
+    sendInquiry(data)
   });
+
+
 });
+
+function sendInquiry(data){
+  $("#inquiryLoading").show();
+  if($("#exampleInputEmail1").val() === ""){
+    showMessage("メールアドレスを入力して下さい");
+  }else{
+    $.ajax({
+      type : 'POST',
+      url : 'https://aquarium-fish-programing.herokuapp.com/inquiry',
+      dataType : 'json',
+      mode: 'cors',
+      data: data
+    })
+    .done(function(data){
+      console.log(data);
+      showMessage(data["message"]);
+    })
+    .fail(function(jqXHR, textStatus, errorThrown){
+      console.log(jqXHR);
+      console.log(textStatus);
+      showMessage("失敗しました");
+    });
+  }
+}
+
+function showMessage(message){
+  $("#inquiryLoading").hide();
+  $("#inquiryResult").text(message);
+  $("#inquiryResult").show();
+}
