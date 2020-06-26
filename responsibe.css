@@ -10,6 +10,8 @@ main .top {
   padding: 30px 5px; }
   main .top h2 {
     font-size: 28px; }
+  main .top .start-btn {
+    margin-top: 15px; }
 main .section {
   padding: 30px 10px; }
   main .section h2 {

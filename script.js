@@ -16,8 +16,24 @@ $(function(){
     $("body, html").animate({ scrollTop: 0}, 2000);
   });
 
+  $(".inquiry-btn").on("click", function(){
+    $(".inquiry").show();
+    $(".start").hide();
+    $("#title").val("お問合せ");
+  });
+
+  $(".start-btn").on("click", function(){
+    $(".start").show();
+    $(".inquiry").hide();
+    $("#title").val("今すぐ始める");
+  });
+
   $("#inquirySubmit").on("click", function(){
-    let data = { email: $("#exampleInputEmail1").val() };
+    let data = { 
+      email: $("#exampleInputEmail1").val() + "(" + $("#title").val() +")",
+      title: $("#exampleInputName").val(),
+      message: $("#exampleInputText").val()
+    };
     sendInquiry(data)
   });
 

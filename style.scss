@@ -14,6 +14,17 @@ main{
       margin-top: 60px;
       padding: 15px 46px;
     }
+    .inquiry-btn{
+      background-color: rgba(0,0,0,0);
+      border: solid 2px #18a2b8;
+      color: #18a2b8;
+      margin-top: 60px;
+      padding: 15px 46px;
+    }
+    .inquiry-btn:hover{
+      background-color: rgba(0,0,0,0.1);
+      color: #1bbfd8;
+    }
   }
   .info{
     background: linear-gradient(to bottom, #cbedf3, rgb(49, 101, 126));
