@@ -42,6 +42,21 @@ main {
     main .section h3 {
       margin-top: 90px;
       margin-bottom: 30px; }
+  main .welcome-section .container {
+    position: relative; }
+  main .welcome-section .float-image {
+    position: absolute;
+    width: 190px;
+    right: -150px;
+    top: -300px;
+    animation: anime5 1s linear 0s infinite alternate; }
+@keyframes anime5 {
+  0% {
+    right: -150px;
+    top: -300px; }
+  100% {
+    right: -150px;
+    top: -330px; } }
   main .welcome-section .welcome-wrap {
     display: flex;
     flex-wrap: wrap; }
@@ -49,6 +64,13 @@ main {
       width: 50%; }
     main .welcome-section .welcome-wrap .welcome-comment {
       padding: 0px 30px; }
+  main .samples-section .container {
+    position: relative; }
+  main .samples-section .float-image {
+    position: absolute;
+    width: 140px;
+    left: -150px;
+    top: 200px; }
   main .samples-section .demos {
     display: flex;
     flex-wrap: wrap; }
@@ -105,6 +127,24 @@ main {
         border-right: solid 33px white;
         border-top: solid 33px rgba(255, 255, 255, 0);
         border-bottom: solid 33px rgba(255, 255, 255, 0); }
+  main .skills-section .container {
+    position: relative; }
+  main .skills-section .float-image {
+    position: absolute;
+    width: 250px;
+    right: -56px;
+    top: -61px;
+    animation: anime3 3s linear 0s infinite alternate; }
+@keyframes anime3 {
+  0% {
+    right: -56px;
+    top: -61px; }
+  50% {
+    right: -40px;
+    top: -70px; }
+  100% {
+    right: -50px;
+    top: -50px; } }
   main .skills-section .skills {
     background-color: #ebfbff;
     display: flex;
@@ -143,6 +183,23 @@ main {
         color: #0d60a9; }
       main .skills-section .skills .skill .devicons-markdown {
         color: #98eaa9; }
+  main .engineers-section .container {
+    position: relative; }
+  main .engineers-section .float-image {
+    position: absolute;
+    width: 147px;
+    right: -150px;
+    top: 400px;
+    animation: anime2 3s linear 0s infinite alternate; }
+@keyframes anime2 {
+  0% {
+    right: -150px; }
+  25% {
+    right: -120px; }
+  50% {
+    right: -130px; }
+  100% {
+    right: -120px; } }
   main .engineers-section .engineer {
     background-color: white;
     width: 100%;
@@ -158,6 +215,19 @@ main {
         margin: auto; }
       main .engineers-section .engineer .comment-wrap .engineer-name {
         text-align: right; }
+  main .prices-section .container {
+    position: relative; }
+  main .prices-section .float-image {
+    position: absolute;
+    width: 160px;
+    left: -120px;
+    top: 500px;
+    animation: anime1 3s linear 0s infinite alternate; }
+@keyframes anime1 {
+  0% {
+    top: 500px; }
+  100% {
+    top: 550px; } }
   main .prices-section .menter {
     color: white;
     width: 70%;

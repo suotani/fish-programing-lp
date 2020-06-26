@@ -57,6 +57,20 @@ main{
   }
   .welcome-section{
     //background-color: #88d9e7;
+    .container{
+      position: relative;
+    }
+    .float-image{
+      position: absolute;
+      width: 190px;
+      right: -150px;
+      top: -300px;
+      animation: anime5 1s linear 0s infinite alternate;
+    }
+    @keyframes anime5 {
+      0% {right: -150px; top: -300px;}
+      100% {right: -150px; top: -330px;}
+    }
     .welcome-wrap{
       display: flex;
       flex-wrap: wrap;
@@ -71,7 +85,15 @@ main{
 
   .samples-section{
     //background-color: #3ec5dd;
-
+    .container{
+      position: relative;
+    }
+    .float-image{
+      position: absolute;
+      width: 140px;
+      left: -150px;
+      top: 200px;
+    }
     .demos{
       display: flex;
       flex-wrap: wrap;
@@ -148,6 +170,21 @@ main{
   }
 
   .skills-section{
+    .container{
+      position: relative;
+    }
+    .float-image{
+      position: absolute;
+      width: 250px;
+      right: -56px;
+      top: -61px;
+      animation: anime3 3s linear 0s infinite alternate;
+    }
+    @keyframes anime3 {
+      0% {right: -56px; top: -61px;}
+      50% {right: -40px; top: -70px;}
+      100% {right: -50px; top: -50px;}
+    }
     .skills{
       background-color: #ebfbff;
       display: flex;
@@ -209,6 +246,22 @@ main{
 
   .engineers-section{
     //background-color: #30aabf;
+    .container{
+      position: relative;
+    }
+    .float-image{
+      position: absolute;
+      width: 147px;
+      right: -150px;
+      top: 400px;
+      animation: anime2 3s linear 0s infinite alternate;
+    }
+    @keyframes anime2 {
+      0% {right: -150px;}
+      25% {right: -120px;}
+      50% {right: -130px}
+      100% {right: -120px;}
+    }
     .engineer{
       background-color: white;
       width: 100%;
@@ -231,6 +284,21 @@ main{
   }
   .prices-section{
     //background-color: #0b7e92;
+    .container{
+      position: relative;
+    }
+    .float-image{
+      position: absolute;
+      width: 160px;
+      left: -120px;
+      top: 500px;
+      animation: anime1 3s linear 0s infinite alternate;
+    }
+    @keyframes anime1 {
+      0% {top: 500px;}
+      100% {top: 550px;}
+    }
+
     .menter{
       color: white;
       width: 70%;
