@@ -1,45 +1,81 @@
-<header>
-  <h1>
-      <p>HTML/CSSの練習</p>
-      <a href="#"><img src="images/aquarium_Fotor.png" alt="大学の廊下"></a>
-  </h1>
-</header>
-
-<main>
-  <h2>aaa</h2>
-
-  <p>aaa</p>
-</main>
-
-<style>
-  body{
-    margin: 0px;
+<html><!doctype html>
+<head> <!-- Required meta tags --> <meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  {% load static %}
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="{% static 'homestyle.css' %}"> 
+  
+  <script src="https://use.fontawesome.com/926fe18a63.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  
+  <style>
+  .table-container {
+      width: 100%;
+      height: 800px;
+    }
+  
+  table.tableBodyScroll thead {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -ms-overflow-x: hidden;
+    -ms-overflow-y: hidden;
+    display: block;
+    width: 1882px;
   }
-  header {
-    margin: 0;
-    padding: 0;
-}
-
-header h1 {
-    margin: 0;    
-    position: relative;
-}
-
-header h1 img {
-    width: 100%;
-}
-
-header h1 p {
-    position: absolute;
-    color: #FFF;
-    top: 50%;
-    left: 50%;
-    font-weight: bold;
-    font-size: 2em;
-    margin: 0;
-    padding: 0;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-}
-</style>
+  
+  table.tableBodyScroll tbody {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-overflow-x: hidden;
+  -ms-overflow-y: auto;
+  display: block;
+  position: absolute;
+  width:1900px;
+  height:750px;
+  }
+  
+  
+  
+    /* table.tableBodyScroll th, table.tableBodyScroll td {
+      width: 100px;
+    } */
+  </style>
+  </head> <body> <header> <div class="container-fluid bg-info"> <nav class="navbar navbar-expand navbar-light"> <a href="" class="navbar-brand text-white font-weight-bold">PSC Intelligence</a> <ul class="navbar-nav"> <li class="nav-item text-white font-weight-bold"><a href="{% url 'home' %}" class="nav-link">Predict</a></li> <li class="nav-item text-white font-weight-bold"><a href="{% url 'nkcode' %}" class="nav-link">NKCode</a></li> </ul> </nav> </div> </header> <main> <section> <div class="table-container mx-1"> {% if latest_deflist %} <table class="table table-striped table-sm table-hover table-responsive tableBodyScroll"> <thead> <tr> <th scope="col" width=30px>No</th> <th scope="col" width=80px>Date</th> <th scope="col" width=100px>Country</th> <th scope="col" width=150px>Port</th> <th scope="col" width=100px>Def.Code</th> <th scope="col" width=210px>Def.Item</th> <th scope="col" width=450px>Nature of Def.</th> <th scope="col" width=35px>Act</th> <th scope="col" width=50px>Edit</th> <th scope="col" width=50px>Del.</th> <!-- <th scope="col">Nature of Def rev</th> --> <th scope="col" width=200px>Def. item</th> <th scope="col" width=395px>Typical Def.</th> <th scope="col" width=50px>Conf.</th> </tr> </thead> <tbody> {% for d in latest_deflist %} {% if d.confidence == 'high' %} <tr class="text-primary"> <th scope="row" width=30px>{{ forloop.counter }}</th> <td width=80px>{{ d.pscdate }}</td> <td width=100px>{{ d.country }}</td> <td width=150px>{{ d.port }}</td> <td width=100px>{{ d.defcode }}</td> <td width=210px>{{ d.defitem }}</td> <td width=450px>{{ d.naturedef }}</td> <td width=35px>{{ d.actcode }}</td> <td width=50px><a href="{% url 'edit' d.id %}">Edit</a></td> <td width=50px><a href="{% url 'delete' d.id %}">Del.</a></td> <!-- <td>{{ d.deficiency_nominized }}</td></td> --> <td width=200px>{{ d.nk2item }}</td></td> <td width=395px>{{ d.nk6item }}</td></td> <td width=50px>{{ d.confidence }}</td></td> </tr> {% elif d.confidence == 'mid.' %} <tr class="text-warning"> <th scope="row" width=30px>{{ forloop.counter }}</th> <td width=80px>{{ d.pscdate }}</td> <td width=100px>{{ d.country }}</td> <td width=150px>{{ d.port }}</td> <td width=100px>{{ d.defcode }}</td> <td width=210px>{{ d.defitem }}</td> <td width=450px>{{ d.naturedef }}</td> <td width=35px>{{ d.actcode }}</td> <td width=50px><a href="{% url 'edit' d.id %}">Edit</a></td> <td width=50px><a href="{% url 'delete' d.id %}">Del.</a></td> <!-- <td>{{ d.deficiency_nominized }}</td></td> --> <td width=200px>{{ d.nk2item }}</td></td> <td width=395px>{{ d.nk6item }}</td></td> <td width=50px>{{ d.confidence }}</td></td> </tr> {% elif d.confidence == 'low' %} <tr class="text-warning"> <th scope="row" width=30px>{{ forloop.counter }}</th> <td width=80px>{{ d.pscdate }}</td> <td width=100px>{{ d.country }}</td> <td width=150px>{{ d.port }}</td> <td width=100px>{{ d.defcode }}</td> <td width=210px>{{ d.defitem }}</td> <td width=450px>{{ d.naturedef }}</td> <td width=35px>{{ d.actcode }}</td> <td width=50px><a href="{% url 'edit' d.id %}">Edit</a></td> <td width=50px><a href="{% url 'delete' d.id %}">Del.</a></td> <!-- <td>{{ d.deficiency_nominized }}</td></td> --> <td width=200px>{{ d.nk2item }}</td></td> <td width=395px>{{ d.nk6item }}</td></td> <td width=50px>{{ d.confidence }}</td></td> </tr> {% else %} <tr class="text-dark"> <th scope="row" width=30px>{{ forloop.counter }}</th> <td width=80px>{{ d.pscdate }}</td> <td width=100px>{{ d.country }}</td> <td width=150px>{{ d.port }}</td> <td width=100px>{{ d.defcode }}</td> <td width=210px>{{ d.defitem }}</td> <td width=450px>{{ d.naturedef }}</td> <td width=35px>{{ d.actcode }}</td> <td width=50px><a href="{% url 'edit' d.id %}">Edit</a></td> <td width=50px><a href="{% url 'delete' d.id %}">Del.</a></td> <!-- <td>{{ d.deficiency_nominized }}</td></td> --> <td width=200px>{{ d.nk2item }}</td></td> <td width=395px>{{ d.nk6item }}</td></td> <td width=50px>{{ d.confidence }}</td></td> </tr> {% endif %} {% endfor %} </tbody> </table> {% endif %} </div>
+      <!-- <div class="pagination">
+          {% if latest_deflist.has_previous %}
+              <a href="{% url 'home' %}">&laquo;first</a>
+              <a href="{% url 'home' %}{{latest_deflist.previous_page_number}}">&laquo;prev</a>
+          {% endif %}
+          <span class="current">
+              [{{latest_deflist.number}}/{{latest_deflist.paginator.num_pages}}]
+          </span>
+          {% if latest_deflist.has_next %}
+              <a href="{% url 'home' %}{{latest_deflist.next_page_number }}">next&raquo;</a>
+              <a href="{% url 'home' %}{{latest_deflist.paginator.num_pages}}">last&raquo;</a>
+          {% endif %}
+      </div>
+    </div> -->
+    </section>
+    
+    <section>
+    <div class="container-fluid bg-info py-2 text-center h-15">
+        <div class="d-inline p-2"><a class="btn btn-success" href="{% url 'predict' %}" role="button">Predict</a></div>
+        <div class="d-inline p-2"><a class="btn btn-warning" href="#" role="button">Export</a></div>
+        <div class="d-inline p-2"><a class="btn btn-secondary" href="{% url 'import' %}" role="button">Import</a></div>
+        <div class="d-inline p-2"><a class="btn btn-primary" href="{% url 'create' %}" role="button">Create</a></div>
+    </div>
+    </section>
+  </main>
+  
+  <footer class="text-center text-muted py-2 h-7">
+        ©  All rights reserved.
+  </footer>
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body> </html>

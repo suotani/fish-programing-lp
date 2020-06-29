@@ -1,17 +1,20 @@
 header {
   padding: 10px; }
   header a.toIndex, header a.toIndex:hover {
-    font-size: 25px; }
+    font-size: 23px; }
   header .header-menus a {
     width: 115px;
     font-size: 13px; }
+
+.table td, .table th {
+  padding: 11px 6px; }
 
 main .top {
   padding: 30px 5px; }
   main .top h2 {
     font-size: 28px; }
-  main .top .start-btn {
-    margin-top: 15px; }
+  main .top .start-btn, main .top .inquiry-btn {
+    margin-top: 30px; }
 main .section {
   padding: 30px 10px; }
   main .section h2 {
@@ -21,6 +24,15 @@ main .section {
     width: 100%; }
   main .section h3 {
     margin-top: 50px; }
+main .welcome-section .float-image {
+  width: 90px; }
+@keyframes anime5 {
+  0% {
+    right: -9px;
+    top: -150px; }
+  100% {
+    right: -9px;
+    top: -160px; } }
 main .welcome-section .welcome-wrap img {
   display: none; }
 main .welcome-section .welcome-wrap .welcome-comment {
@@ -51,10 +63,43 @@ main .skills-section .skills {
   padding-left: 10px; }
   main .skills-section .skills .skill {
     width: 95px; }
+main .skills-section .float-image {
+  width: 90px; }
+@keyframes anime3 {
+  0% {
+    right: 0px;
+    top: 33px; }
+  100% {
+    right: 0px;
+    top: 50px; } }
 main .engineers-section .engineer .comment-wrap .engineer-comment {
   width: 100%; }
 main .engineers-section .engineer .comment-wrap .engineer-name {
   margin-top: 10px; }
+main .engineers-section .float-image {
+  width: 73px;
+  top: -19px; }
+@keyframes anime2 {
+  0% {
+    right: 0px; }
+  25% {
+    right: 15px; }
+  50% {
+    right: 10px; }
+  100% {
+    right: 15px; } }
+main .prices-section .float-image {
+  width: 60px;
+  left: 0px; }
+@keyframes anime1 {
+  0% {
+    top: 700px; }
+  100% {
+    top: 720px; } }
+main .prices-section .container {
+  padding: 0px; }
+main .prices-section .menter {
+  width: 100%; }
 
 #toTop {
   right: 10px;

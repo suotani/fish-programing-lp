@@ -1,7 +1,7 @@
 header{
   padding: 10px;
   a.toIndex, a.toIndex:hover{
-    font-size: 25px;
+    font-size: 23px;
   }
   .header-menus{
     a{
@@ -11,14 +11,18 @@ header{
   }
 }
 
+.table td, .table th{
+  padding: 11px 6px;
+}
+
 main{
   .top{
     padding: 30px 5px;
     h2{
       font-size: 28px;
     }
-    .start-btn{
-      margin-top: 15px;
+    .start-btn, .inquiry-btn{
+      margin-top: 30px;
     }
   }
   .section{
@@ -36,6 +40,13 @@ main{
   }
 
   .welcome-section{
+    .float-image{
+      width: 90px;
+    }
+    @keyframes anime5 {
+      0% {right: -9px; top: -150px;}
+      100% {right: -9px; top: -160px;}
+    }
     .welcome-wrap{
       img{
         display: none;
@@ -88,6 +99,13 @@ main{
         width: 95px;
       }
     }
+    .float-image{
+      width: 90px;
+    }
+    @keyframes anime3 {
+      0% {right: 0px; top: 33px;}
+      100% {right: 0px; top: 50px;}
+    }
   }
 
   .engineers-section{
@@ -101,6 +119,33 @@ main{
           margin-top: 10px;
         }
       }
+    }
+    .float-image{
+      width: 73px;
+      top: -19px;
+    }
+    @keyframes anime2 {
+      0% {right: 0px;}
+      25% {right: 15px;}
+      50% {right: 10px}
+      100% {right: 15px;}
+    }
+  }
+
+  .prices-section{
+    .float-image{
+      width: 60px;
+      left: 0px;
+    }
+    @keyframes anime1 {
+      0% {top: 700px;}
+      100% {top: 720px;}
+    }
+    .container{
+      padding: 0px;
+    }
+    .menter{
+      width: 100%;
     }
   }
 }
