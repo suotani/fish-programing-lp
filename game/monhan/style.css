@@ -1,0 +1,150 @@
+body{
+  margin: 0;
+  height: 700px;
+}
+
+ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+
+.container{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  background: no-repeat url("./back.jpeg");
+  background-size: cover;
+  padding-top: 30px;
+}
+
+.menu{
+  border-top: solid 5px #af2325;
+  border-bottom: solid 5px #af2325;
+  border-right: solid 5px black;
+  border-left: solid 5px black;
+  width: 300px;
+  margin-right: 30px;
+  margin-left: auto;
+  background-color: #2a2018d3;
+}
+
+
+.menu-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #693137;
+  padding-right: 50px;
+}
+
+.menu-header h2{
+  color: #d4b42d;
+  margin: 0;
+}
+
+.menu-header .pagenate{
+  color: white;
+  font-weight: 600;
+  position: relative;
+} 
+
+.menu-header .page-num{
+  font-size: 24px;
+  transform   : scale(0.8, 1.0); 
+}
+
+.menu-inner{
+  border-top: solid 2px green;
+  border-bottom: solid 2px green;
+}
+
+.menu-body li{
+  color: rgb(167, 167, 167);
+  font-weight: 900;
+  font-size: 21px;
+  padding: 1px 4px;
+  border-bottom: solid 2px #616161;
+}
+
+.menu-body li.active{
+  color: white;
+}
+
+.menu-body li:hover{
+  background-color: #aa8c10;
+}
+
+.trir1:after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 0 12px 12px;
+  border-color: transparent transparent transparent #f9f101;
+  top: 7px;
+  right: -21px;
+}
+
+.trir2:after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent #693137;
+  top: 11px;
+  right: -17px;
+}
+
+.trir3:after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 4px;
+  border-color: transparent transparent transparent #f9f101;
+  top: 15px;
+  right: -13px;
+}
+
+
+
+.tril1:after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 12px 12px 0;
+  border-color: transparent #f9f101 transparent transparent ;
+  top: 7px;
+  left: -21px;
+}
+
+.tril2:after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 8px 8px 0;
+  border-color: transparent #693137 transparent transparent;
+  top: 11px;
+  left: -17px;
+}
+
+.tril3:after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 4px 4px 0;
+  border-color: transparent #f9f101 transparent transparent;
+  top: 15px;
+  left: -13px;
+}
