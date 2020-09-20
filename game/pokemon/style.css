@@ -1,0 +1,65 @@
+@font-face {
+	font-family: 'pokemon-font';
+  src: url(./pokemon-font.ttf);
+}
+
+body{
+  margin: 0;
+  height: 400px;
+  font-size: 20px;
+  font-family: "pokemon-font", monospace;
+}
+
+ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+
+.container{
+  width: 400px;
+  height: 100%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.main{
+  background: no-repeat url(./menu.jpg);
+  background-size: contain;
+  height: 100%;
+  position: relative;
+}
+
+.menu{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f8f8f8;
+  border: solid 3px black;
+}
+.inner-menu{
+  border: solid 4px #f8f8f8;
+}
+
+.inner-menu ul{
+  border: solid 3px black;
+  padding: 13px;
+  padding-left: 27px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+.inner-menu ul li{
+  margin-top: 14px;
+  position: relative;
+}
+
+.inner-menu ul li .target{
+  display: none;
+  position: absolute;
+  left: -20px;
+}
+
+.inner-menu ul li:hover .target{
+  display: inline;
+}
